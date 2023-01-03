@@ -4,23 +4,27 @@
     <view class="user">
       <view class="avatar">
         <open-data type="userAvatarUrl" class="img"></open-data>
+<!--        <button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar"></button>-->
       </view>
-      <view class="name">
-        <open-data type="userNickName" class="name"></open-data>
-      </view>
+      <!--<view class="avatar">
+      <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <image class="avatar" src="{{avatarUrl}}"></image>
+      </button>
+      </view>-->
+      <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
     </view>
     <view class="tips" bindtap="edit" wx:if="{{suffixNo != null}}">
-      我的车牌尾号是<text>{{suffixNo}}</text>
+      我的尾号<text>{{suffixNo}}</text>
       <image src="../../images/edit.png"></image>
     </view>
-    <view class="tips" wx:else><input type="number" value="{{initSuffixNo}}" maxlength="{{1}}" focus placeholder="请输入车牌尾号数字" bindinput="changeSuffixNo" /></view>
+    <view class="tips" wx:else><input type="number" value="{{initSuffixNo}}" maxlength="{{1}}" focus placeholder="请输入车牌尾号" bindinput="changeSuffixNo" /></view>
   </view>
   <view class="xianxing-tips">
     {{xianxingTips}}
   </view>
   <view class="current-xianxing-tips {{currentXianxing ? 'xian-tips' : ''}}">
     <!-- <image src="../../images/tips.png" class="tips-icon"></image> -->
-    👉 
+    👉
     今日{{currentXianxing || '不限行'}}
      👈
   </view>

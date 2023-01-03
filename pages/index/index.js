@@ -2,6 +2,7 @@
 import {calendarUtil} from '../../utils/calendar.js';
 import {xianxingUtil} from '../../utils/xianxing.js';
 
+const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
 const date = new Date();
 const currentYear = date.getFullYear();
 const currentMonth = date.getMonth();
@@ -12,6 +13,9 @@ let todayData = {};
 
 Page({
   data: {
+    avatarUrl: defaultAvatarUrl,
+    theme: wx.getSystemInfoSync().theme,
+
     week: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
     monthList: {
       // '2020-11': [
@@ -34,6 +38,13 @@ Page({
     currentXianxing: '',
 
     selectedMonth: currentMonth + 1
+  },
+  onChooseAvatar(e) {
+    console.log(e.detail.avatarUrl)
+    const { avatarUrl } = e.detail
+    this.setData({
+      avatarUrl,
+    })
   },
   tapNotice() {
     wx.switchTab({
@@ -163,10 +174,15 @@ Page({
   },
   setTitle(year, month) {
     wx.setNavigationBarTitle({
-      title: [year, '年', (month + 1), '月邯郸限行日历'].join('')
+      title: [year, '年', (month + 1), '月邯郸限行'].join('')
     })
   },
   onLoad: function (option) {
+    wx.onThemeChange((result) => {
+      this.setData({
+        theme: result.theme
+      })
+    }),
     this.setData({
       currentDate: {
         year: currentYear,

@@ -4,9 +4,10 @@
       <view class="avatar">
         <open-data type="userAvatarUrl" class="img"></open-data>
       </view>
-      <view class="name">
+      <!--<view class="name">
         <open-data type="userNickName" class="name"></open-data>
-      </view>
+      </view>-->
+      <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
     </view>
     <view class="tips" bindtap="edit">
     </view>
