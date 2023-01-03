@@ -1,43 +1,41 @@
 <!--index.wxml-->
 <view class="container-inner">
-  <view class="group-title">
-    牡丹文化节期间限行规则
-  </view>
-  <view class="group-content">
-    <text class="important">1. 4月1日至5月10日期间的周六、周日（4月3日、4日、10日、11日、17日、18日、24日、25日，5月1日、2日、8日、9日，每天8：00至19:00，悬挂 “豫C”号牌（含临牌）的机动车，按车牌号最后一位阿拉伯数字（车牌号最后一位为字母的，按字母前最后一位数字），实行单号单日、双号双日行驶(单号为1、3、5、7、9，双号为2、4、6、8、0)。</text>
-    <view></view>
-    <text class="important">2. 4月1日至5月10日期间的周一至周五，每天8:00至19：00，悬挂 “豫C”号牌（含临牌）的机动车，按车牌号最后一位阿拉伯数字（车牌号最后一位为字母的，按字母前最后一位数字）实行尾号限行。</text>
-    <view></view>
-    <text class="important">3. 4月1日至5月10日，悬挂非豫C号牌小型客车以及新能源号牌的机动车不限行！！！</text>
-  </view>
-  <view class="group-title">
-    限行范围
-  </view>
-  <view class="group-content">
-    丝路大道（原西环路，不含）以东、三川大道（原东环路）～中州东路～安居路（不含）以西、邙岭大道（原310国道，不含）以南、南山大道（原南环路，不含）以北范围内道路、桥梁。<text class="important">（重要提醒：调整王城大道快速路主线道路（南山大道至邙岭大道段）纳入机动车尾号限行范围）</text>
-    <image src="../../images/fanwei.jpg" class="image" bindtap="previewImg"></image>
-  </view>
+    <view class="group-title">
+        2023年1月邯郸限行规则
+    </view>
+    <view class="group-content">
+        <text class="important">为进一步落实国务院联防联控机制关于新冠病毒感染疫情防控“新十条”措施要求，满足群众工作就医等出行需求，统筹考虑全市社会交通运行情况，经研究决定</text>
+        <view></view>
+        <text class="important">自2022年12月31日起，邯郸市全市范围内暂缓实施机动车尾号限行措施，恢复时间另行通知。</text>
+    </view>
+    <view class="group-title">
+        限行范围
+    </view>
+    <view class="group-content">
+        全市范围
+        <image src="../../images/fanwei.jpg" class="image" bindtap="previewImg"></image>
+    </view>
 
-  <view class="group-title">
-    限行时间
-  </view>
-  <view class="group-content">
-    2021年1月4日至2021年12月31日，每天上午8：00至晚上19：00（牡丹文化节期间限行规定，另行通告）。周六、周日、法定节假日及调整为休息日的工作日不限行。
-  </view>
+    <view class="group-title">
+        限行时间
+    </view>
+    <view class="group-content">
+        全天
+    </view>
 
-  <view class="group-title">
-    限行车辆
-  </view>
-  <view class="group-content">
-    除保障城市区生产、生活正常运转规定车辆和悬挂新能源号牌以及12座（含）以上客车外，所有机动车（含临时号牌、外地市号牌车辆）
-  </view>
+    <view class="group-title">
+        限行车辆
+    </view>
+    <view class="group-content">
+       无
+    </view>
 
-  <view class="group-title">
-    限行方式
-  </view>
-  <view class="group-content">
-    每周一至周五，按机动车号牌最后一位阿拉伯数字（尾数为字母的，按字母前最后一位数字为准），实行尾号限行。周一限车牌尾号为1和6的机动车；周二限车牌尾号为2和7的机动车；周三限车牌尾号为3和8的机动车；周四限车牌尾号为4和9的机动车；周五限车牌尾号为5和0的机动车。
-  </view>
+    <view class="group-title">
+        限行方式
+    </view>
+    <view class="group-content">
+        无
+    </view>
 
-  <!-- <image src="../../images/waimai.png" class="waimai" bindtap="toWaimai"></image> -->
+    <!-- <image src="../../images/waimai.png" class="waimai" bindtap="toWaimai"></image> -->
 </view>

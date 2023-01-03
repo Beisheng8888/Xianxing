@@ -163,7 +163,7 @@ Page({
   },
   setTitle(year, month) {
     wx.setNavigationBarTitle({
-      title: [year, '年', (month + 1), '月洛阳限行日历'].join('')
+      title: [year, '年', (month + 1), '月邯郸限行日历'].join('')
     })
   },
   onLoad: function (option) {

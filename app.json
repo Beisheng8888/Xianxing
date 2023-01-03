@@ -9,14 +9,9 @@
     "selectedColor": "#398FF4",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "指南",
+      "text": "限行",
       "iconPath": "/images/tabs/index.png",
       "selectedIconPath": "/images/tabs/index-active.png"
-    }, {
-      "pagePath": "pages/news/index",
-      "text": "热点",
-      "iconPath": "/images/tabs/news.png",
-      "selectedIconPath": "/images/tabs/news-active.png"
     }, {
       "pagePath": "pages/my/index",
       "text": "我的",
@@ -27,7 +22,7 @@
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#398FF4",
-    "navigationBarTitleText": "洛阳限行指南",
+    "navigationBarTitleText": "邯郸限行指南",
     "navigationBarTextStyle":"white"
   },
   "style": "v2",

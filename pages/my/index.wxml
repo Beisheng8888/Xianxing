@@ -12,7 +12,7 @@
     </view>
   </view>
 
-  <view class="group" wx:if="{{apps && apps.length > 0}}">
+ <!-- <view class="group" wx:if="{{apps && apps.length > 0}}">
     <view class="group-title">
       推荐小程序
     </view>
@@ -26,15 +26,15 @@
       </view>
       <view class="divider"></view>
     </view>
-  </view>
+  </view>-->
 
   <view class="group">
     <view class="group-title">
       开发者微信
     </view>
     <view class="qrcode-content">
-      <view class="tips">长按下方二维码保存图片，微信扫描二维码添加开发者微信，回复限行，邀您进入洛阳限行群，每天实时获取限行信息。</view>
-      <image src="../../images/qrcode.jpg" show-menu-by-longpress class="qrcode" bindtap="previewImg"></image>
+      <view class="tips">长按下方二维码保存图片，微信扫描二维码添加开发者微信，回复限行，邀您进入邯郸限行群，每天实时获取限行信息。</view>
+      <image src="../../images/微信.jpg" show-menu-by-longpress class="qrcode" bindtap="previewImg"></image>
     </view>
   </view>
 </view>
