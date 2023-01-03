@@ -9,14 +9,14 @@
     "selectedColor": "#398FF4",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "限行",
+      "text": "查询",
       "iconPath": "/images/tabs/index.png",
       "selectedIconPath": "/images/tabs/index-active.png"
     }, {
       "pagePath": "pages/my/index",
       "text": "我的",
-      "iconPath": "/images/tabs/my.png",
-      "selectedIconPath": "/images/tabs/my-active.png"
+      "iconPath": "/images/tabs/user.png",
+      "selectedIconPath": "/images/tabs/user-active.png"
     }]
   },
   "window":{
