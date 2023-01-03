@@ -184,14 +184,14 @@ Page({
   },
   onShareAppMessage: function( options ){
     return {
-      title: '今日' + todayData.xianxingInfo + '，牡丹文化节期间限行有变化👉',
-      imageUrl: '../../images/fanwei.jpg'
+      title: '今日' + todayData.xianxingInfo + '，邯郸期间限行有变化👉',
+      imageUrl: '../../images/share.jpg'
     };
   },
   onShareTimeline: function () {
 		return {
-        title: '今日' + todayData.xianxingInfo + '，牡丹文化节期间限行有变化👉',
-        imageUrl: '../../images/fanwei.jpg'
+        title: '今日' + todayData.xianxingInfo + '，邯郸期间限行有变化👉',
+        imageUrl: '../../images/share.jpg'
 	    }
 	}
 })
