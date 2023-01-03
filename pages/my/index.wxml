@@ -30,6 +30,12 @@
 
   <view class="group">
     <view class="group-title">
+      开源
+    </view>
+    <view class="qrcode-content">
+      <view class="tips">https://github.com/Beisheng8888/Xianxing</view>
+    </view>
+    <view class="group-title">
       开发者微信
     </view>
     <view class="qrcode-content">
