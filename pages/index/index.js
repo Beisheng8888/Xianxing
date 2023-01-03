@@ -200,13 +200,13 @@ Page({
   },
   onShareAppMessage: function( options ){
     return {
-      title: '今日' + todayData.xianxingInfo + '，邯郸期间限行有变化👉',
+      title: '今日' + todayData.xianxingInfo + '，邯郸假期限行有变化👉',
       imageUrl: '../../images/share.jpg'
     };
   },
   onShareTimeline: function () {
 		return {
-        title: '今日' + todayData.xianxingInfo + '，邯郸期间限行有变化👉',
+        title: '今日' + todayData.xianxingInfo + '，邯郸假期限行有变化👉',
         imageUrl: '../../images/share.jpg'
 	    }
 	}
