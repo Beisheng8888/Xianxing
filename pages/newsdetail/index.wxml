@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <wxs module="dateformat" src="../../filters/dateformat.wxs"></wxs>
+  <view class="box" wx:if="{{detail.id}}">
+    <view class="banner">
+      <view class="left">
+        <view class="title">{{detail.title}}</view>
+        <view class="time-author">{{dateformat.format(detail.createTime)}}  {{detail.authorName}}</view>
+      </view>
+      <button open-type="share" class="right">分享</button>
+    </view>
+
+    <view class="content">
+      <mp-html content="{{detail.content}}" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,157 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #F0F0F0;
+  padding: 1rpx 0;
+}
+.container .notice {
+  color: red;
+  font-size: 32rpx;
+  padding: 24rpx;
+  padding-bottom: 0;
+  text-decoration: underline;
+}
+.container .user-tips {
+  background: #FFFFFF;
+  margin: 24rpx;
+  border-radius: 12rpx;
+  padding: 24rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+.container .user {
+  display: flex;
+  align-items: center;
+}
+.container .user .avatar {
+  overflow:hidden;  
+  display: block;
+  width: 72rpx;
+  height: 72rpx;
+  margin-right: 18rpx;
+  border-radius: 50%;
+}
+.container .user .name {
+  font-size: 30rpx;
+  color: #333333;
+}
+.container .tips {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 28rpx;
+  color: #666666;
+}
+.container .tips text {
+  font-weight: 500;
+  font-size: 36rpx;
+  color: #398FF4;
+  padding: 0 12rpx;
+}
+.container .tips image {
+  width: 36rpx;
+  height: 36rpx;
+}
+.container .xianxing-tips {
+  margin: 24rpx 24rpx 0;
+  color: #666666;
+  font-size: 24rpx;
+}
+.container .current-xianxing-tips {
+  font-size: 32rpx;
+  font-weight: 600;
+  margin: 24rpx 24rpx 0;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  background: #FFFFFF;
+  color: #398FF4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .current-xianxing-tips .tips-icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 12rpx;
+}
+.container .xian-tips {
+  color: red;
+}
+.container .banner image {
+  margin: 0 24rpx;
+  width: 702rpx;
+  /* height: 408.375rpx; */
+  border-radius: 18rpx;
+  object-fit: cover;
+}
+.container .content {
+  background: #FFFFFF;
+  margin: 24rpx;
+  border-radius: 12rpx;
+  padding: 24rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+.container .item {
+  width: 93rpx;
+  height: 93rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12rpx;
+  margin-bottom: 12rpx;
+}
+.container .content .week-box {
+  display: flex;
+}
+.container .content .day-box {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.container .content .day-box .month-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .solar {
+
+}
+.container .lunar {
+  font-size: 20rpx;
+}
+
+.container .swiper {
+  width: 100%;
+  height: 624rpx;
+}
+
+.container .swiper-box {
+  position: relative;
+}
+.container .swiper-box .nav {
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  top: calc(50% - 30rpx);
+  padding: 6px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container .swiper-box .prev {
+  left: -24rpx;
+}
+.container .swiper-box .next {
+  right: -24rpx;
+}

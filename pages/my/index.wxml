@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="user-tips">
+    <view class="user">
+      <view class="avatar">
+        <open-data type="userAvatarUrl" class="img"></open-data>
+      </view>
+      <view class="name">
+        <open-data type="userNickName" class="name"></open-data>
+      </view>
+    </view>
+    <view class="tips" bindtap="edit">
+    </view>
+  </view>
+
+  <view class="group" wx:if="{{apps && apps.length > 0}}">
+    <view class="group-title">
+      推荐小程序
+    </view>
+    <view class="app" wx:for="{{apps}}" wx:key="index">
+      <view class="item" bindtap="onTapApp" data-app="{{item.appId}}">
+        <image src="{{item.iconUrl}}" class="icon"></image>
+        <view class="name-desc">
+          <text class="name">{{item.name}}</text>
+          <text class="desc">{{item.introduction}}</text>
+        </view>
+      </view>
+      <view class="divider"></view>
+    </view>
+  </view>
+
+  <view class="group">
+    <view class="group-title">
+      开发者微信
+    </view>
+    <view class="qrcode-content">
+      <view class="tips">长按下方二维码保存图片，微信扫描二维码添加开发者微信，回复限行，邀您进入洛阳限行群，每天实时获取限行信息。</view>
+      <image src="../../images/qrcode.jpg" show-menu-by-longpress class="qrcode" bindtap="previewImg"></image>
+    </view>
+  </view>
+</view>

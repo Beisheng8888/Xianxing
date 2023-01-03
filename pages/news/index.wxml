@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <wxs module="dateformat" src="../../filters/dateformat.wxs"></wxs>
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="index" data-index="{{index}}" data-id="{{item.id}}" bindtap="tapNews">
+      <view class="left">
+        <view class="title">{{item.title}}</view>
+        <view class="time-count">
+          <view class="time">{{dateformat.getFriendly(item.createTime)}}</view>
+          <view class="count">{{item.viewCount}}阅</view>
+        </view>
+      </view>
+      <image src="{{item.coverUrl}}" class="right"></image>
+    </view>
+  </view>
+</view>

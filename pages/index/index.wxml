@@ -1,0 +1,55 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="user-tips">
+    <view class="user">
+      <view class="avatar">
+        <open-data type="userAvatarUrl" class="img"></open-data>
+      </view>
+      <view class="name">
+        <open-data type="userNickName" class="name"></open-data>
+      </view>
+    </view>
+    <view class="tips" bindtap="edit" wx:if="{{suffixNo != null}}">
+      我的车牌尾号是<text>{{suffixNo}}</text>
+      <image src="../../images/edit.png"></image>
+    </view>
+    <view class="tips" wx:else><input type="number" value="{{initSuffixNo}}" maxlength="{{1}}" focus placeholder="请输入车牌尾号数字" bindinput="changeSuffixNo" /></view>
+  </view>
+  <view class="xianxing-tips">
+    {{xianxingTips}}
+  </view>
+  <view class="current-xianxing-tips {{currentXianxing ? 'xian-tips' : ''}}">
+    <!-- <image src="../../images/tips.png" class="tips-icon"></image> -->
+    👉 
+    今日{{currentXianxing || '不限行'}}
+     👈
+  </view>
+  <view class="content" wx:if="monthList && monthList.length > 0">
+    <view class="week-box">
+      <view class="item" wx:for="{{week}}" wx:key="index">{{item}}</view>
+    </view>
+    <view class="swiper-box">
+      <swiper current="{{activeIndex}}" class="swiper" style="height: {{swiperRowCount * 104}}rpx" bindchange="changeSwiper">
+        <block wx:for="{{monthList}}" wx:for-item="day" wx:for-index="dayIndex" wx:key="dayIndex">
+          <swiper-item item-id="{{dayIndex}}">
+            <view class="day-box">
+              <view class="item" wx:for="{{day}}" wx:key="index" style="background: {{item.today ? '#F0F0F0' : '#FFFFFF'}}">
+                <block wx:if="item">
+                  <view class="solar" style="color: {{item.year < currentDate.year || item.year <= currentDate.year && item.month < currentDate.month || item.year <= currentDate.year && item.month <= currentDate.month && item.day < currentDate.day ? '#999999' : '#333333'}}">{{item.day}}</view>
+                  <view class="lunar" style="color: {{!item.xianxing ? '#2196F3' : '#FF5722'}}" wx:if="{{item.day}}">{{item.xianxingInfo}}</view>
+                </block>
+              </view>
+              <view class="month-cover">{{selectedMonth}}月</view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <image src="../../images/prev.png" class="nav prev" bindtap="onPrev"></image>
+      <image src="../../images/next.png" class="nav next" bindtap="onNext"></image>
+    </view>
+  </view>
+  <!-- <view class="banner">
+    <image src="https://bing.ioliu.cn/v1/rand?w=750&h=422"></image>
+  </view> -->
+  <rule></rule>
+</view>

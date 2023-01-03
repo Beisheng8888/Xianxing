@@ -1,0 +1,44 @@
+var getFriendly = function(dateStr) {
+  if (dateStr) {
+    var currentDate = getDate();
+    var targetDate = getDate(dateStr);
+    var currentTime = parseInt(currentDate.getTime() / 1000);
+    var targetTime = parseInt(targetDate.getTime() / 1000);
+    var increment = currentTime - targetTime;
+    if (increment <= 60) {
+      return '刚刚';
+    }
+    if (increment <= 3600) {
+      return parseInt(increment / 60) + '分钟前';
+    }
+    if (currentDate.getFullYear() == targetDate.getFullYear() && currentDate.getMonth() == targetDate.getMonth() && currentDate.getDate() == targetDate.getDate()) {
+      return parseInt(increment / 3600) + '小时前';
+    } else {
+      var temp = getDate(dateStr);
+      temp.setDate(temp.getDate() + 1);
+      if (temp.getDate() == currentDate.getDate()) {
+        return '昨天';
+      }
+      var month = '0' + (targetDate.getMonth() + 1);
+      var date = '0' + targetDate.getDate();
+      if (currentDate.getFullYear() == targetDate.getFullYear()) {
+        return month.substring(month.length - 2, month.length) + '-' + date.substring(date.length - 2, date.length);
+      }
+      return targetDate.getFullYear() + '-' + month.substring(month.length - 2, month.length) + '-' + date.substring(date.length - 2, date.length);
+    }
+  }
+}
+
+var format = function(dateStr) {
+  var targetDate = getDate(dateStr);
+  return targetDate.getFullYear() + '-' + padStart(targetDate.getMonth() + 1) + '-' + padStart(targetDate.getDate()) + ' ' + padStart(targetDate.getHours()) + ':' + padStart(targetDate.getMinutes()) + ':' + padStart(targetDate.getSeconds());
+}
+
+var padStart = function(str) {
+  var temp = ('0' + str);
+  temp = temp.substring(temp.length - 2, temp.length);
+  return temp;
+}
+
+module.exports.getFriendly = getFriendly;
+module.exports.format = format;

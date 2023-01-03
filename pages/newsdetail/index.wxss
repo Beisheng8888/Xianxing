@@ -1,0 +1,36 @@
+.box {
+  padding: 24rpx;
+}
+.banner {
+  display: flex;
+  align-items: center;
+}
+.banner .left {
+  flex: 1;
+}
+.banner .left .title {
+  font-size: 30rpx;
+  color: #333333;
+}
+.banner .left .time-author {
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 12rpx;
+}
+.banner .right {
+  background-color: transparent;
+  padding: 12rpx;
+  margin: 0;
+  min-width: 0;
+  font-size: 28rpx;
+  color: #888888;
+  font-weight: normal;
+  width: auto;
+}
+.banner .right::after {
+  border: none;
+}
+
+.content {
+  padding: 24rpx 0;
+}

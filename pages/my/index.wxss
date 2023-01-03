@@ -1,0 +1,99 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1rpx 0;
+  background: #F0F0F0;
+}
+
+.container .user-tips {
+  background: #FFFFFF;
+  margin: 24rpx;
+  border-radius: 12rpx;
+  padding: 24rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+.container .user {
+  display: flex;
+  align-items: center;
+}
+.container .user .avatar {
+  overflow:hidden;  
+  display: block;
+  width: 72rpx;
+  height: 72rpx;
+  margin-right: 18rpx;
+  border-radius: 50%;
+}
+.container .user .name {
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.container .group {
+  margin: 24rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  padding-top: 1rpx;
+}
+.container .group-title {
+  margin: 24rpx 12rpx 12rpx;
+  padding: 6rpx 0 6rpx 18rpx;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  color: #333333;
+  border-left: 12rpx solid #398FF4;
+  border-bottom: 1rpx solid #F0F0F0;
+  position: relative;
+}
+.container .item {
+  padding: 24rpx;
+  display: flex;
+  align-items: center;
+}
+.container .item .icon {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}
+.container .item .name-desc {
+  height: 96rpx;
+  flex: 1;
+  margin: 0 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .item .name {
+  font-size: 28rpx;
+  color: #333333;
+}
+.container .item .desc {
+  font-size: 26rpx;
+  color: #666666;
+}
+.container .divider {
+  height: 1px;
+  background-color: #F0F0F0;
+  margin: 12rpx;
+}
+
+.container .qrcode-content {
+  padding: 24rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .tips {
+  font-size: 24rpx;
+  color: #666666;
+  margin: 24rpx 0;
+  text-align: left
+}
+.container .qrcode {
+  width: 650rpx;
+  height: 650rpx;
+  border-radius: 12rpx;
+}
